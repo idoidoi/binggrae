@@ -1,0 +1,4 @@
+$(windew).ready(function(){
+
+  
+})

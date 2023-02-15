@@ -1,0 +1,32 @@
+html { font-size: 10px;}
+body { font-size: 1rem; font-family: 'Noto Sans KR', sans-serif; }
+.verytop_header { border-bottom: 1px solid #e7e7e7; height: 3rem; padding: 0 8rem;}
+.verytop_header ul { display: flex; align-items: center; justify-content: flex-end;}
+.verytop_header ul li ~ li { padding-left: 2rem; }
+.verytop_header ul a {display: inline-block; position: relative; padding-right: 2rem;  font-size: 1.4rem; line-height: 3rem; letter-spacing: -.126rem; color: #1b1b1b;}
+.verytop_header ul a:after { content:""; position: absolute; right: 0; top: 50%; transform: translateY(-50%);  height: 1.4rem; width: 1.4rem; background: url(../image/link_arrow02.png) no-repeat center right / cover;}
+
+.middle_header { display: flex; padding: 4rem 2rem; justify-content: space-between; align-items: center; box-sizing: border-box;}
+.middle_header h1 { width: 14.4rem; height: 3.5rem; }
+.middle_header .tab { display: flex; align-items: center; justify-content: center; font-size: 1.6rem; }
+.middle_header .tab > li {padding-right: 5rem; box-sizing: border-box;}
+.middle_header .tab > li > a { padding-bottom: 4rem;}
+.middle_header .tab ul { display: none;}
+
+.header_3 { display: flex; justify-content: space-between;  width: 10rem; height: 3rem; }
+.header_3 .lang button {display: inline-block; width: 4rem; height: 3rem; background-color: transparent; }
+.header_3 .lang button img { }
+
+.burgerTab { display:block;}
+input[id=trigger] {visibility: hidden;  position: absolute; top: 8rem;}
+label[for=trigger] { width: 2.6rem; height: 2.2rem; display: block; position: relative; cursor: pointer;}
+label[for=trigger] span { position: absolute; height: .2rem; border-radius: .2rem;  background-color: #000; width: 100%; left: 0; transition: 0.3s;}
+label[for=trigger] span:nth-child(1) { top: 0;}
+label[for=trigger] span:nth-child(2) { top: 50%;}
+label[for=trigger] span:nth-child(3) {top: 100%;}
+input[id=trigger]:checked + label[for=trigger] span:nth-child(1) { top: 50%; transform: rotate(45deg);}
+input[id=trigger]:checked + label[for=trigger] span:nth-child(2) { opacity: 0;}
+input[id=trigger]:checked + label[for=trigger] span:nth-child(3) { top: 50%; transform: rotate(-45deg);}
+
+
+
