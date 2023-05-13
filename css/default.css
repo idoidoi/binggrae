@@ -3,8 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css); */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
 /* Fontawesome 4.7 */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@font-face {
+  font-family: 'Binggrae';
+  font-weight: normal;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeBold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeBold.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeBold.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeBold.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeBold.ttf') format("truetype");
+  font-display: swap;
+} 
+@font-face {
+  font-family: 'Binggrae2';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
 /* Reset */
 html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,menu,nav,section,article,aside,
 dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0; }

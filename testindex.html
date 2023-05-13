@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/default.css">
+  <!-- Demo styles -->
+  
+    <!-- Demo styles -->
+    <style>
+      html { font-size: 10px;}
+body { font-size: 1rem; font-family: 'Noto Sans KR', sans-serif;  position: relative;
+      height: 100%; }
+  
+/* .slider-wrap {position: relative; max-width: 165rem;  width:100%;  margin: 0 auto;}
+.swiper { height: 100%; width: 100%;  
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;}
+.swiper-slide { height: calc((100% - 30px) / 2) !important; }
+.swiper-slide a{  transition: 1s;}
+.swiper-slide a:hover { margin-top: -1.5rem; } 
+.swiper-button-prev::after { width: .8rem; height: 1.5rem; background: url(../image/prev_arrow.png) no-repeat; }
+.swiper-button-next::after { width: .8rem; height: 1.5rem; background: url(../image/next_arrow.png) no-repeat;  }
+.menu_img {}
+.menu_img img { width: 100%;}
+.swiper-slide button { width: 100%; height: 4.3rem; background-color: #f9f9f9; border-radius: 4.3rem; font-size: 1.6rem; margin-top: 1.2rem; font-weight: 700; color: #1f1f1f; }
+.swiper-slide button:hover { color:#fff; box-shadow: inset 0px 5px 10px 0 rgb(53 53 53 / 11%); background-image: linear-gradient(to top, #ed1c24, #e0462e); }
+.shop a { display: block; height: 25rem; border: solid 1px #edecef; border-radius: 3rem; text-align: center; line-height: 25rem; }
+/* .swiper-wrapper { display: -webkit-inline-box;} */
+/* .swiper-pagination { display: none;}
+
+@media (max-width:768px) {
+  .product h2 { font-size: 2.2rem;}
+.swiper-pagination { display: block; position: static; margin-top: 2.5rem;}
+.swiper-button-prev,
+.swiper-button-next { display: none}
+.slider1 { padding: 0 1.8rem 5rem; margin: 0; border-bottom: 8px solid #f7f7f7; }
+.slider2 { margin: 0;}
+.shop { padding: 5rem 2rem;}
+} */ */
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+      <div class="swiper slider3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="">
+              <div class="menu_img">
+                <img src="image/6e5e4881-40ba-4150-ac86-6d61173da0ad.png" alt="">
+              </div>
+              <button>아이스크림</button>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <div class="menu_img">
+                <img src="image/fd6acf22-becc-43e2-923e-c7300f2c8da7.png" alt="">
+              </div>
+              <button>우유/치즈</button>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <div class="menu_img">
+                <img src="image/1dea8cd4-bdb2-4ac0-a42c-8cd60968aa36.png" alt="">
+              </div>
+              <button>발효유</button>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <div class="menu_img">
+                <img src="image/8bdfd152-49d3-4430-b64b-9ecb43e9cb09.png" alt="">
+              </div>
+              <button>커피</button>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <div class="menu_img">
+                <img src="image/99f5db34-3e58-4df7-b43a-e97714ca0287.png" alt="">
+              </div>
+              <button>주스</button>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <div class="menu_img">
+                <img src="image/481f6075-a2a3-4070-85b0-3000a5817a10.png" alt="">
+              </div>
+              <button>음료</button>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <div class="menu_img">
+                <img src="image/e9342f3c-4649-4e9a-b147-461282347b20.png" alt="">
+              </div>
+              <button>스낵/디저트</button>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <div class="menu_img">
+                <img src="image/61bc3400-cd34-429d-bcbf-5471dcee79a0.png" alt="">
+              </div>
+              <button>건강지향</button>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <div class="menu_img">
+                <img src="image/fbf974f7-e6c8-4df6-87a5-3154b5cd647c.png" alt="">
+              </div>
+              <button>수출제품</button>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper1-pagination"></div>
+      </div>
+      <div class="swiper-button-prev swiper1-prev"></div>
+      <div class="swiper-button-next swiper1-next"></div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper3 = new Swiper('.slider3', {
+        slidesPerView: 6,
+    spaceBetween: 18,
+    navigation: {
+      nextEl: '.swiper1-next',
+      prevEl: '.swiper1-prev',
+    }, 
+    pagination: {
+      el: '.swiper1-pagination',
+      type: 'bullets',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 3,
+      grid: {
+        rows: 2,
+      },
+      spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 6,
+      },
+      1199: {
+        slidesPerView: 5,
+      },
+      1399: {
+        slidesPerView: 6,
+      },
+    }
+  });
+    </script>
+
+    <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      height: calc((100% - 30px) / 2) !important;
+
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 6,
+    spaceBetween: 18,
+    navigation: {
+      nextEl: '.swiper1-next',
+      prevEl: '.swiper1-prev',
+    }, 
+    pagination: {
+      el: '.swiper1-pagination',
+      type: 'bullets',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 3,
+      grid: {
+        rows: 2,
+      },
+      spaceBetween: 8,
+      },
+      768: {
+        slidesPerView: 6,
+        grid: {
+        rows: 1,
+      },
+      },
+      1199: {
+        slidesPerView: 5,
+        grid: {
+        rows: 1,
+      },
+      },
+      1399: {
+        slidesPerView: 6,
+        grid: {
+        rows: 1,
+      },
+      },
+    }
+    });
+  </script>
+</body>
+</html>

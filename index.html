@@ -6,8 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" media="( min-width:0px ) and ( max-width:1400px )" href="css/tablet.css">
+  <link rel="stylesheet" media="( min-width:0px ) and ( max-width:768px )" href="css/mobile.css">
+  <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -74,7 +80,7 @@
                 <li><a href="">새소식</a></li>
                 <li><a href="">보도자료</a></li>
                 <li><a href="">빙그레 스토리</a></li>
-                <li><a href="">미디어 라이브러리</a></li>
+                <li><a href="">미디어<br> 라이브러리</a></li>
               </ul>
             </li>
             <li>
@@ -99,7 +105,7 @@
             </ul>
           </div>
           <div class="burgerTab">
-            <input type="checkbox" id="trigger">
+            <input type="checkbox" class="trigger" id="trigger">
             <label for="trigger">
               <span></span>
               <span></span>
@@ -109,29 +115,357 @@
         </div>
       </div>
     </div>
-    <div class="inner_header"></div>
   </header>
+  <nav class="side-nev">
+    <div class="verytop_header side-top">
+      <ul>
+        <li><a href="">구매포털시스템</a></li>
+        <li><a href="">인재채용</a></li>
+      </ul>
+      <button class="side-close"><img src="image/ham_close.png" alt=""><span class="hide">메뉴닫기</span></button>
+    </div>
+    <div class="mid-menu">
+      <ul class="tab">
+        <li>
+          <a href="#none">회사소개</a>
+          <ul>
+            <li><a href="">CEO인사말</a></li>
+            <li><a href="">경영이념</a></li>
+            <li><a href="">사업분야</a></li>
+            <li><a href="">히스토리</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#none">제품소개</a>
+          <ul>
+            <li><a href="">전체보기</a></li>
+            <li><a href="">아이스크림</a></li>
+            <li><a href="">우유/치즈</a></li>
+            <li><a href="">발효유</a></li>
+            <li><a href="">커피</a></li>
+            <li><a href="">주스</a></li>
+            <li><a href="">음료</a></li>
+            <li><a href="">스낵/디저트</a></li>
+            <li><a href="">건강지향</a></li>
+            <li><a href="">수출제품</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#none">지속가능경영</a>
+          <ul>
+            <li><a href="">지속가능경영 체계</a></li>
+            <li><a href="">Eco-Friendly</a></li>
+            <li><a href="">Shared Value</a></li>
+            <li><a href="">Global Integrity</a></li>
+            <li><a href="">윤리준법경영</a></li>
+            <li><a href="">사회공헌</a></li>
+            <li><a href="">보고서 및 정책</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#none">투자정보</a>
+          <ul>
+            <li><a href="">재무정보</a></li>
+            <li><a href="">주식정보</a></li>
+            <li><a href="">전자공고</a></li>
+            <li><a href="">공시정보</a></li>
+            <li><a href="">IR자료실</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#none">뉴스룸</a>
+          <ul>
+            <li><a href="">새소식</a></li>
+            <li><a href="">보도자료</a></li>
+            <li><a href="">빙그레 스토리</a></li>
+            <li><a href="">미디어 라이브러리</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#none">고객센터</a>
+          <ul>
+            <li><a href="">고객상담</a></li>
+            <li><a href="">제품공급문의</a></li>
+            <li><a href="">사이버 부정신고</a></li>
+            <li><a href="">안전신문고</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="side-bottom">
+      <ul>
+        <li><a href="" class="on">KR</a></li>
+        <li><a href="">EN</a></li>
+      </ul>
+      <a href="">오시는길</a>
+    </div>
+  </nav>
   <main>
     <section class="main-section">
       <div class="main-logo">
-        <img src="image/sec01_logo_4.png" alt="">
+        <img src="image/sec01_logo.png" alt="">
       </div>
-      <div class="main-search">
-        <input type="text" class="search">
-        <button class="search-btn"></button>
-      </div>
+      <form class="main-search">
+        <input type="text" class="search" placeholder="제품명을 입력해주세요">
+        <button class="search-btn">SEARCH</button>
+      </form>
       <div class="font-keword">
         <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+          <li><a href="">#바나나맛우유</a></li>
+          <li><a href="">#더단백</a></li>
+          <li><a href="">#슈퍼콘</a></li>
+          <li><a href="">#요플레</a></li>
+          <li><a href="">#아카페라</a></li>
         </ul>
       </div>
     </section>
+    <section class="product">
+      <div class="menu">
+        <h2 class="common_h2">행복한 빙그레의 맛!</h2>
+        <div class="slider-wrap">
+          <div class="swiper slider1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="">
+                  <div class="menu_img">
+                    <img src="image/6e5e4881-40ba-4150-ac86-6d61173da0ad.png" alt="">
+                  </div>
+                  <button>아이스크림</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <div class="menu_img">
+                    <img src="image/fd6acf22-becc-43e2-923e-c7300f2c8da7.png" alt="">
+                  </div>
+                  <button>우유/치즈</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <div class="menu_img">
+                    <img src="image/1dea8cd4-bdb2-4ac0-a42c-8cd60968aa36.png" alt="">
+                  </div>
+                  <button>발효유</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <div class="menu_img">
+                    <img src="image/8bdfd152-49d3-4430-b64b-9ecb43e9cb09.png" alt="">
+                  </div>
+                  <button>커피</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <div class="menu_img">
+                    <img src="image/99f5db34-3e58-4df7-b43a-e97714ca0287.png" alt="">
+                  </div>
+                  <button>주스</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <div class="menu_img">
+                    <img src="image/481f6075-a2a3-4070-85b0-3000a5817a10.png" alt="">
+                  </div>
+                  <button>음료</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <div class="menu_img">
+                    <img src="image/e9342f3c-4649-4e9a-b147-461282347b20.png" alt="">
+                  </div>
+                  <button>스낵/디저트</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <div class="menu_img">
+                    <img src="image/61bc3400-cd34-429d-bcbf-5471dcee79a0.png" alt="">
+                  </div>
+                  <button>건강지향</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <div class="menu_img">
+                    <img src="image/fbf974f7-e6c8-4df6-87a5-3154b5cd647c.png" alt="">
+                  </div>
+                  <button>수출제품</button>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper1-pagination"></div>
+          </div>
+          <div class="swiper-button-prev swiper1-prev"></div>
+          <div class="swiper-button-next swiper1-next"></div>
+        </div>
+      </div>
+      <div class="shop">
+        <h2 class="common_h2">BRAND SHOP</h2>
+        <div class="slider-wrap">
+          <div class="swiper slider2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="">
+                  <img src="image/sec02_logo01.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <img src="image/sec02_logo02.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <img src="image/sec02_logo03.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <img src="image/sec02_logo04.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <img src="image/sec02_logo05.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <img src="image/sec02_logo06.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <img src="image/sec02_logo07.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper2-pagination"></div>
+          </div>
+          <div class="swiper-button-prev swiper2-prev"></div>
+          <div class="swiper-button-next swiper2-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="inquiry">
+      <h2 class="common_h2">고객문의 및 불편사항</h2>
+      <div class="inquiry_wrap">
+        <div class="top_list">
+          <div class="left">
+            <a href="">
+              <h3>이메일 상담</h3>
+              <p>
+                빙그레에 궁금한 사항을 <br class="tb">문의해 주세요.<br>
+                <b>최대한 빠른 시일내에<br class="tb"> 친절하게 답변해드리겠습니다.</b>
+              </p>
+              <button class="btn">상담하기</button>
+            </a>
+          </div>
+          <div class="right">
+            <h3>전화 상담<p>080.022.0056</p>
+            </h3>
+            <p>월~금(공휴일 제외)<span>09:00~17:30</span></p>
+          </div>
+        </div>
+        <div class="bottom_list">
+          <div class="tit">
+            <h3>자주 묻는 질문에 내용이 없을 경우, 이메일 및 전화 상담 바랍니다.</h3>
+            <a href="" class="btn btn_more">더보기</a>
+          </div>
+          <ul>
+            <li>
+              <a href="">
+                <strong><i>Q.</i>아이스크림에는 왜 유통기한이 없나요?</strong>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <strong><i>Q.</i>유통기한 경과 제품, 빙그레에서 처리해주나요?</strong>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <strong><i>Q.</i>제품 유통기한 뒤에 있는 알파벳 기호는 무엇인가요?</strong>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <strong><i>Q.</i>빙그레 서체의 사용 범위를 알고 싶어요.</strong>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <strong><i>Q.</i>유통기한과 소비기한의 차이점은 무엇인가요?</strong>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <strong><i>Q.</i>소비기한은 언제부터 시행하나요?</strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h2 class="common_h2">빙그레 임직원 및 종사자 온라인제보</h2>
+      <div class="list_type">
+        <div class="left">
+          <a href="">
+            <p>빙그레 임직원의 부당한 요구 또는 업무 처리, 기타 부정행위 제보</p>
+            <button class="btn">사이버 부정선고</button>
+          </a>
+        </div>
+        <div class="right">
+          <a href="">
+            <p>빙그레 종사자의 유해·위험요소 및 안전·보건에 관한 의견 제보</p>
+            <button class="btn">안전신문고</button>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+  <footer>
+    <div class="footer-inner">
+      <div class="top">
+        <h2 class="logo"><img src="image/f_logo.png" alt=""></h2>
+        <ul>
+          <li><a href="">개인정보처리방침</a></li>
+          <li><a href="">오시는길</a></li>
+        </ul>
+      </div>
+      <ul>
+        <li>회사명 : 빙그레</li>
+        <li>경기도 남양주시 다산동 4344-3 / 경기도 남양주시 다산순환로 45(다산동)</li>
+      </ul>
+      <div class="bottom">
+        <div class="bottom_inner">
+          <ul>
+            <li><a href="">고객센터</a></li>
+            <li><a href="">1:1이메일문의</a></li>
+          </ul>
+          <p>ⓒ Binggrae all rights reserved.</p>
+        </div>
+        <ul>
+          <li><a href=""><span class="hide">인스타</span></a></li>
+          <li><a href=""><span class="hide">유튜브</span></a></li>
+          <li><a href=""><span class="hide">건강tft</span></a></li>
+          <li><a href=""><span>Flagship store</span> Soft Lab</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="btn-go">
+    <ul>
+      <li><a href="" class="go-helper"><img src="image/chat_img.png" alt=""></a></li>
+      <li><a href="" class="go-shop">SHOP</a></li>
+      <li><a href="" class="btn-top"><img src="image/fix_arrow.png" alt=""></a></li>
+    </ul>
+  </div>
 </body>
 
 </html>
